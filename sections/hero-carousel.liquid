@@ -27,6 +27,9 @@
     .hero-carousel-content {
     z-index:9;
     }
+    .hero-btn {
+
+    }
 {% endstyle %}
 
 <div class="section-id-{{ section.id }}">
@@ -47,10 +50,10 @@
                     <img src="{{ image | img_url: '1024x1024' }}" alt="Hero Image" />
                 {% endif %}
                 <div class="hero-carousel-content PositionAbsolute">
-                    <span>{{ subheading }}</span>
-                    <h2>{{ heading }}</h2>
-                    <p>{{ description }}</p>
-                    <a href="{{ link }}" class="hero-btn">{{ button_label }}</a>
+                    <span class="ColorWhite">{{ subheading }}</span>
+                    <h2 class="ColorWhite">{{ heading }}</h2>
+                    <p class="ColorWhite">{{ description }}</p>
+                    <a href="{{ link }}" class="hero-btn BGColorBlue ColorWhite">{{ button_label }}</a>
                 </div>
             </div>
         {% endfor %}
