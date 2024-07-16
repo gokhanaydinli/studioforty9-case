@@ -1,6 +1,24 @@
 @charset "UTF-8";
 
+.PositionRelative {
+  position: relative;
+}
 
+.PositionAbsolute {
+  position: absolute;
+}
+
+.DisplayFlex {
+  display: flex;
+}
+
+.FlexDirectionRow {
+  flex-direction: row;
+}
+
+.FlexDirectionColumn {
+  flex-direction: column;
+}
 
 
 
