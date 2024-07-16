@@ -28,7 +28,9 @@
     z-index:9;
     }
     .hero-btn {
-
+        padding:12px;
+        text-transform:uppercase;
+        width:max-content;
     }
 {% endstyle %}
 
@@ -49,7 +51,7 @@
                 {% if image %}
                     <img src="{{ image | img_url: '1024x1024' }}" alt="Hero Image" />
                 {% endif %}
-                <div class="hero-carousel-content PositionAbsolute">
+                <div class="hero-carousel-content P-Absolute D-Flex F-Column">
                     <span class="ColorWhite">{{ subheading }}</span>
                     <h2 class="ColorWhite">{{ heading }}</h2>
                     <p class="ColorWhite">{{ description }}</p>
@@ -89,10 +91,10 @@
           "default": "Heading"
         },
         {
-          "type": "richtext",
+          "type": "textarea",
           "id": "description",
           "label": "Description",
-          "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+          "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         },
         {
           "type": "text",
@@ -128,10 +130,10 @@
           "default": "Heading"
         },
         {
-          "type": "richtext",
+          "type": "textarea",
           "id": "description",
           "label": "Description",
-          "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+          "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         },
         {
           "type": "text",
