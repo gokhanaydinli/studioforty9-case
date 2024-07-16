@@ -42,6 +42,11 @@
       "settings": {
       }
     },
+    "free_delivery_banner_y7xXVV": {
+      "type": "free-delivery-banner",
+      "settings": {
+      }
+    },
     "16359276425da8ce46": {
       "type": "slideshow",
       "blocks": {
@@ -126,6 +131,7 @@
         "1635927863703110df-1",
         "1635927863703110df-2"
       ],
+      "disabled": true,
       "settings": {
         "height": "medium",
         "text_alignment": "center",
@@ -135,6 +141,7 @@
     },
     "16359278676808bea5": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "",
@@ -149,6 +156,7 @@
     },
     "16359278867b92de38": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "image_width": 700,
         "subheading": "Subheading",
@@ -221,6 +229,7 @@
         "16359279164ff7d3f3-2",
         "474c4491-283d-4680-a37b-7b5a444e7e62"
       ],
+      "disabled": true,
       "settings": {
         "grid": 2,
         "height": "fixed",
@@ -267,6 +276,7 @@
         "16359281184fd0d618-0",
         "16359281184fd0d618-1"
       ],
+      "disabled": true,
       "settings": {
         "title": "From the people",
         "layout": "image-right",
@@ -281,6 +291,7 @@
     },
     "16359285201c71bbb1": {
       "type": "background-video",
+      "disabled": true,
       "settings": {
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "subheading": "Tell your story",
@@ -343,6 +354,7 @@
         "163592857728b8bdc2-1",
         "163592857728b8bdc2-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "Multi-column",
         "text_alignment": "center",
@@ -413,6 +425,7 @@
         "1635928580d75f81bf-5",
         "1635928580d75f81bf-6"
       ],
+      "disabled": true,
       "settings": {
         "product": "",
         "inventory_transfers_enable": true,
@@ -426,6 +439,7 @@
     },
     "1635928697c562053a": {
       "type": "map",
+      "disabled": true,
       "settings": {
         "color_bg": "#f4f4f4",
         "full_width": true,
@@ -441,6 +455,7 @@
     },
     "163592870141219e2f": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "title": "Blog posts",
         "blog": "",
@@ -454,6 +469,7 @@
   },
   "order": [
     "hero_carousel_gJpAeh",
+    "free_delivery_banner_y7xXVV",
     "16359276425da8ce46",
     "1635927863703110df",
     "16359278676808bea5",
