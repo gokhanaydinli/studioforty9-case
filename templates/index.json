@@ -15,13 +15,23 @@
         "image_on_left_cQtajn": {
           "type": "image_on_left",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image.jpg"
+            "image": "shopify:\/\/shop_images\/image.jpg",
+            "subheading": "Subheading",
+            "title": "Heading",
+            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<\/p>",
+            "button_label": "shop fishing",
+            "link": ""
           }
         },
         "image_on_right_DJ9n4N": {
           "type": "image_on_right",
           "settings": {
-            "image": "shopify:\/\/shop_images\/right.jpg"
+            "image": "shopify:\/\/shop_images\/right.jpg",
+            "subheading": "Subheading",
+            "title": "Heading",
+            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<\/p>",
+            "button_label": "shop fishing",
+            "link": ""
           }
         }
       },
