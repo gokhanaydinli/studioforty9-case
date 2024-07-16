@@ -1,15 +1,15 @@
 <div class="section-id-{{ section.id }}">
-    <div class="container">
+  <div class="container">
+    {% for block in section.blocks %}
       <div class="gallery__image rimage-outer-wrapper rimage-background lazyload fade-in"
-           data-bgset="{% render 'bgset', image: block.settings.image %}"
+           data-bgset="{{ block.settings.image | img_url: '1024x1024' }}"
            data-sizes="auto"
            data-parent-fit="cover"
-           style="background-position: {{ block.settings.alignment }}; --ar-padding: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%">
+           style="background-position: {{ block.settings.alignment }}; --ar-padding: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;">
       </div>
-    </div>
-
+    {% endfor %}
+  </div>
 </div>
-
 
 {% schema %}
 {
