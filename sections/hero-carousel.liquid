@@ -1,15 +1,13 @@
 <div class="section-id-{{ section.id }}">
-  <div class="container">
-    {% for block in section.blocks %}
-      {{ block.settings.image }}
-      <div class="gallery__image rimage-outer-wrapper rimage-background lazyload fade-in"
-           data-bgset="{{ block.settings.image | img_url: '1024x1024' }}"
-           data-sizes="auto"
-           data-parent-fit="cover"
-           style="background-position: {{ block.settings.alignment }}; --ar-padding: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;">
-      </div>
-    {% endfor %}
-  </div>
+    <div class="container">
+        {% for block in section.blocks %}
+            <div class="gallery__image {% if block.type == 'image_on_left' %}image-left{% elsif block.type == 'image_on_right' %}image-right{% endif %}">
+                {% if block.settings.image %}
+                    <img src="{{ block.settings.image | img_url: '1024x1024' }}" alt="Hero Image" />
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
 </div>
 
 {% schema %}
@@ -33,7 +31,7 @@
       "type": "image_on_right",
       "name": "Image on right",
       "settings": [
-      {
+        {
           "type": "image_picker",
           "id": "image",
           "label": "Image"
@@ -45,7 +43,14 @@
     {
       "name": "Hero Carousel",
       "settings": {},
-      "blocks": []
+      "blocks": [
+        {
+          "type": "image_on_left"
+        },
+        {
+          "type": "image_on_right"
+        }
+      ]
     }
   ]
 }
