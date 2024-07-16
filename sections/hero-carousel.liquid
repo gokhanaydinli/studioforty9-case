@@ -1,6 +1,7 @@
 <div class="section-id-{{ section.id }}">
   <div class="container">
     {% for block in section.blocks %}
+      {{ block.settings.image }}
       <div class="gallery__image rimage-outer-wrapper rimage-background lazyload fade-in"
            data-bgset="{{ block.settings.image | img_url: '1024x1024' }}"
            data-sizes="auto"
