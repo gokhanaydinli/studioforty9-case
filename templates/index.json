@@ -12,10 +12,9 @@
     "hero_carousel_gJpAeh": {
       "type": "hero-carousel",
       "blocks": {
-        "image_GTB3yf": {
+        "image_WMnfdp": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image.jpg",
             "subheading": "Gallery",
             "title": "Tell your story",
             "button_label": "",
@@ -24,7 +23,7 @@
         }
       },
       "block_order": [
-        "image_GTB3yf"
+        "image_WMnfdp"
       ],
       "settings": {
       }
