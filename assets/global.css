@@ -29,12 +29,25 @@
     color:black;
 }
 
+.ColorBlue {
+    color:#001d7c;
+}
+
 .BGColorBlue {
     background-color: #001d7c;
 }
 
+.BGColorWhite {
+    background-color: white;
+}
+
+.F-Bold {
+    font-weight: 700;
+}
+
+
 .Heading1 {
-    font-size:96px;
+    font-size:72px;
 }
 
 .T-Center {
