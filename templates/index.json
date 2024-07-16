@@ -16,9 +16,9 @@
           "type": "image_on_left",
           "settings": {
             "image": "shopify:\/\/shop_images\/image.jpg",
-            "subheading": "Subheading",
-            "title": "Heading",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "subheading": "everything you need",
+            "title": "fishing",
+            "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
             "button_label": "shop fishing",
             "link": ""
           }
@@ -27,10 +27,10 @@
           "type": "image_on_right",
           "settings": {
             "image": "shopify:\/\/shop_images\/right.jpg",
-            "subheading": "Subheading",
-            "title": "Heading",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "button_label": "shop fishing",
+            "subheading": "on an adventure",
+            "title": "outdoors",
+            "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+            "button_label": "shop outdoors",
             "link": ""
           }
         }
