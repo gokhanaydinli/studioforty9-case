@@ -44,6 +44,34 @@
     },
     "free_delivery_banner_y7xXVV": {
       "type": "free-delivery-banner",
+      "blocks": {
+        "icon_jmQ4UG": {
+          "type": "icon",
+          "settings": {
+            "select_icon": "return icon",
+            "text": "28 day returns"
+          }
+        },
+        "icon_yrnkN8": {
+          "type": "icon",
+          "settings": {
+            "select_icon": "free delivery",
+            "text": "free delivery on orders over €40"
+          }
+        },
+        "icon_Bch9ir": {
+          "type": "icon",
+          "settings": {
+            "select_icon": "location",
+            "text": "In Business Since 1977"
+          }
+        }
+      },
+      "block_order": [
+        "icon_jmQ4UG",
+        "icon_yrnkN8",
+        "icon_Bch9ir"
+      ],
       "settings": {
       }
     }
