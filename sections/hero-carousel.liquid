@@ -24,6 +24,9 @@
     height: 100%;
     object-fit: cover;
     }
+    .hero-carousel-content {
+    z-index:9;
+    }
 {% endstyle %}
 
 <div class="section-id-{{ section.id }}">
@@ -43,7 +46,7 @@
                 {% if image %}
                     <img src="{{ image | img_url: '1024x1024' }}" alt="Hero Image" />
                 {% endif %}
-                <div class="hero-carousel-content">
+                <div class="hero-carousel-content PositionAbsolute">
                     <span>{{ subheading }}</span>
                     <h2>{{ heading }}</h2>
                     <p>{{ description }}</p>
