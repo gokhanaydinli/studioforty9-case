@@ -53,3 +53,7 @@
 .T-Center {
     text-align: center;
 }
+
+.T-Uppercase {
+    text-transform: uppercase;
+}
