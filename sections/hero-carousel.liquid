@@ -51,9 +51,9 @@
                 {% if image %}
                     <img src="{{ image | img_url: '1024x1024' }}" alt="Hero Image" />
                 {% endif %}
-                <div class="hero-carousel-content P-Absolute D-Flex F-Column">
+                <div class="hero-carousel-content P-Absolute D-Flex F-Column A-Center">
                     <span class="ColorWhite">{{ subheading }}</span>
-                    <h2 class="ColorWhite">{{ heading }}</h2>
+                    <h2 class="Heading1 ColorWhite">{{ heading }}</h2>
                     <p class="ColorWhite">{{ description }}</p>
                     <a href="{{ link }}" class="hero-btn BGColorBlue ColorWhite">{{ button_label }}</a>
                 </div>
