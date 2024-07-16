@@ -32,6 +32,7 @@
         text-transform:uppercase;
         width:max-content;
     }
+
 {% endstyle %}
 
 <div class="section-id-{{ section.id }}">
@@ -54,7 +55,7 @@
                 <div class="hero-carousel-content P-Absolute D-Flex F-Column A-Center">
                     <span class="ColorWhite">{{ subheading }}</span>
                     <h2 class="Heading1 ColorWhite">{{ heading }}</h2>
-                    <p class="ColorWhite">{{ description }}</p>
+                    <p class="ColorWhite T-Center">{{ description }}</p>
                     <a href="{{ link }}" class="hero-btn BGColorBlue ColorWhite">{{ button_label }}</a>
                 </div>
             </div>
@@ -86,7 +87,7 @@
         },
         {
           "type": "text",
-          "id": "title",
+          "id": "heading",
           "label": "Heading",
           "default": "Heading"
         },
@@ -125,7 +126,7 @@
         },
         {
           "type": "text",
-          "id": "title",
+          "id": "heading",
           "label": "Heading",
           "default": "Heading"
         },

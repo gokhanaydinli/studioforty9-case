@@ -1,0 +1,42 @@
+.P-Relative {
+    position: relative;
+}
+
+.P-Absolute {
+    position: absolute;
+}
+
+.D-Flex {
+    display: flex;
+}
+
+.F-Row {
+    flex-direction: row;
+}
+
+.F-Column {
+    flex-direction: column;
+}
+
+.A-Center {
+    align-items: center;
+}
+
+.ColorWhite {
+    color:white;
+}
+.ColorBlack {
+    color:black;
+}
+
+.BGColorBlue {
+    background-color: #001d7c;
+}
+
+.Heading1 {
+    font-size:96px;
+}
+
+.T-Center {
+    text-align: center;
+}
