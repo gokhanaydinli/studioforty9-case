@@ -18,7 +18,7 @@
             "image": "shopify:\/\/shop_images\/image.jpg",
             "subheading": "Subheading",
             "title": "Heading",
-            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<\/p>",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "button_label": "shop fishing",
             "link": ""
           }
@@ -29,7 +29,7 @@
             "image": "shopify:\/\/shop_images\/right.jpg",
             "subheading": "Subheading",
             "title": "Heading",
-            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<\/p>",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
             "button_label": "shop fishing",
             "link": ""
           }
