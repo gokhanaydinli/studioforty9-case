@@ -2,7 +2,14 @@
 
 </style>
 <div class="section-id-{{ section.id }}">
-    <span>gokhan</span>
+    <div class="free-delivery-container">
+        {% for block in section.blocks %}
+            <div class="free-delivery-item">
+                <img src="{{ block.settings.icon }}" class="lazyload">
+                <h3>{{ block.settins.content }}</h3>
+            </div>
+        {% endfor %}
+    </div>
 </div>
 
 {% schema %}
@@ -11,7 +18,36 @@
   "class": "section-delivery-banner",
   "settings": [],
   "blocks": [
-
+    {
+      "type": "title",
+      "name": "Title",
+      "settings": [
+        {
+          "type": "select",
+          "id": "select_icon",
+          "label": "Use icon",
+          "options": [
+            {
+              "value": "top left",
+              "label": "Top left"
+            },
+            {
+              "value": "top center",
+              "label": "Top center"
+            },
+            {
+              "value": "top right",
+              "label": "Top right"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
   ],
   "presets": [
     {
