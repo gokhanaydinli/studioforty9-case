@@ -81,18 +81,21 @@
         "box_xzEUQC": {
           "type": "box",
           "settings": {
+            "image": "shopify:\/\/shop_images\/image1-min.jpg",
             "order_number": "1"
           }
         },
         "box_XAHpY6": {
           "type": "box",
           "settings": {
+            "image": "shopify:\/\/shop_images\/image2-min.jpg",
             "order_number": "2"
           }
         },
         "box_LjzjmK": {
           "type": "box",
           "settings": {
+            "image": "shopify:\/\/shop_images\/image3-min.jpg",
             "order_number": "3"
           }
         }
