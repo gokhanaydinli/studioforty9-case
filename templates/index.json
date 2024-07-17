@@ -77,6 +77,31 @@
     },
     "flex_section_pH3MeC": {
       "type": "flex-section",
+      "blocks": {
+        "box_xzEUQC": {
+          "type": "box",
+          "settings": {
+            "order_number": "1"
+          }
+        },
+        "box_XAHpY6": {
+          "type": "box",
+          "settings": {
+            "order_number": "2"
+          }
+        },
+        "box_LjzjmK": {
+          "type": "box",
+          "settings": {
+            "order_number": "3"
+          }
+        }
+      },
+      "block_order": [
+        "box_xzEUQC",
+        "box_XAHpY6",
+        "box_LjzjmK"
+      ],
       "settings": {
       }
     }
