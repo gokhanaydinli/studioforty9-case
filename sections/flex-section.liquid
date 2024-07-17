@@ -31,12 +31,9 @@
         position: relative;
     }
 
-    {% for block in section.blocks %}
     .right-content {
-        background-color: {{ block.settings.bg_color }};
         color: #fff;
     }
-    {% endfor %}
 
     .Order-3 {
         margin: 12px 0;
@@ -89,7 +86,7 @@
                             <div class="left-content flex-section-bg-image-container">
                                 <img src="{{ block.settings.image | img_url: '1024x1024' }}" class="flex-section-bg-image" alt="Background Image" />
                             </div>
-                            <div class="right-content D-Flex F-Column">
+                            <div class="right-content D-Flex F-Column" style="background-color: {{ block.settings.bg_color }};">
                                 <h1 class="ColorWhite">{{ block.settings.title }}</h1>
                                 <p class="ColorWhite">{{ block.settings.description }}</p>
                                 <a href="#" class="ColorWhite">{{ block.settings.button }}</a>
@@ -104,7 +101,7 @@
                         <div class="Order-{{ block.settings.order_number }} D-Flex F-Row" style="height: 100%;">
                             <div class="left-content flex-section-bg-image-container P-Relative">
                                 <img src="{{ block.settings.image | img_url: '1024x1024' }}" class="flex-section-bg-image" alt="Background Image" />
-                                <div class="P-Absolute right-column-content">
+                                <div class="P-Absolute right-column-content" style="background-color: {{ block.settings.bg_color }};">
                                     <h1 class="ColorWhite">{{ block.settings.title }}</h1>
                                     <p class="ColorWhite">{{ block.settings.description }}</p>
                                     <a href="#" class="ColorWhite">{{ block.settings.button }}</a>
