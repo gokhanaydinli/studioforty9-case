@@ -1,19 +1,67 @@
 <style>
+    .flex-section-container {
+        margin: 24px;
+        padding: 24px 0;
+    }
 
-.flex-section-container {
-    margin: 24px 24px;
-    padding:24px 0;
-}
+    .D-Flex {
+        display: flex;
+    }
 
+    .left-column, .right-column {
+        padding: 12px;
+    }
+
+    .left-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-column {
+        flex: 1;
+    }
+
+    .Order-1, .Order-2, .Order-3 {
+        margin: 12px 0;
+        padding: 12px;
+        border: 1px solid #000;
+    }
 </style>
+
 <div class="section-id-{{ section.id }}">
     <div class="flex-section-container">
         <div class="D-Flex">
-        {% for block in section.blocks %}
-        <div class="Order-{{ block.settings.order_number }}">
-            {{ block.settings.order_number }}
-        </div>
-        {% endfor %}
+            <div class="left-column">
+                {% for block in section.blocks %}
+
+                    {% liquid
+                        assign image = block.settings.image
+                    %}
+
+                    {% if block.settings.order_number == '1' or block.settings.order_number == '2' %}
+                        <div class="Order-{{ block.settings.order_number }} D-Flex F-Row">
+                            <div>
+                                <img src="{{ image | img_url: '1024x1024' }}" alt="Background Image" />
+                            </div>
+                            <div class="D-Flex F-Column">
+                                <h1>title</h1>
+                                <h2>description</h2>
+                                <h3>button</h3>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="right-column">
+                {% for block in section.blocks %}
+                    {% if block.settings.order_number == '3' %}
+                        <div class="Order-{{ block.settings.order_number }}">
+                            {{ block.settings.order_number }}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
@@ -28,6 +76,11 @@
       "type": "box",
       "name": "Box",
       "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
         {
           "id": "order_number",
           "type": "select",
@@ -54,9 +107,7 @@
     {
       "name": "Flex Section",
       "settings": {},
-      "blocks": [
-
-      ]
+      "blocks": []
     }
   ]
 }
