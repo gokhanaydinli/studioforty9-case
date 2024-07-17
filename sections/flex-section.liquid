@@ -8,7 +8,13 @@
 </style>
 <div class="section-id-{{ section.id }}">
     <div class="flex-section-container">
-        <span>gokhan</span>
+        <div class="D-Flex">
+        {% for block in section.blocks %}
+        <div class="Order-{{ block.settings.order_number }}">
+            {{ block.settings.order_number }}
+        </div>
+        {% endfor %}
+        </div>
     </div>
 </div>
 
@@ -18,7 +24,31 @@
   "class": "section-flex-section",
   "settings": [],
   "blocks": [
-
+    {
+      "type": "box",
+      "name": "Box",
+      "settings": [
+        {
+          "id": "order_number",
+          "type": "select",
+          "label": "Order Number",
+          "options": [
+            {
+              "value": "1",
+              "label": "1"
+            },
+            {
+              "value": "2",
+              "label": "2"
+            },
+            {
+              "value": "3",
+              "label": "3"
+            }
+          ]
+        }
+      ]
+    }
   ],
   "presets": [
     {
