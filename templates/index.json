@@ -48,21 +48,21 @@
         "icon_jmQ4UG": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Return.svg",
+            "icon_cdn": "https:\/\/cdn.shopify.com\/s\/files\/1\/0609\/1233\/6986\/files\/Return.svg?v=1721245341",
             "text": "28 day returns"
           }
         },
         "icon_yrnkN8": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Shipping.svg",
+            "icon_cdn": "",
             "text": "free delivery on orders over €40"
           }
         },
         "icon_Bch9ir": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Marker.png",
+            "icon_cdn": "",
             "text": "In Business Since 1977"
           }
         }
