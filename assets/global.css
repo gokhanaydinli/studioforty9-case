@@ -22,9 +22,14 @@
     align-items: center;
 }
 
+.J-ContentCenter {
+    justify-content: center;
+}
+
 .ColorWhite {
     color:white;
 }
+
 .ColorBlack {
     color:black;
 }
