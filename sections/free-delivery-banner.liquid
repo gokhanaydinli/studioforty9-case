@@ -9,8 +9,8 @@
     <div class="free-delivery-container F-Row D-Flex A-Center BGColorBlue">
         {% for block in section.blocks %}
             <div class="free-delivery-item D-Flex F-Row">
-                {% if block.settings.select_icon != blank %}
-                    <img src="{{ block.settings.select_icon }}" class="lazyload">
+                {% if block.settings.icon != blank %}
+                    <img src="{{ block.settings.icon | img_url: master }}" class="lazyload">
                 {% endif %}
                 <h3 class="ColorWhite">{{ block.settings.text }}</h3>
             </div>
@@ -29,23 +29,9 @@
       "name": "Icon",
       "settings": [
         {
-          "type": "select",
-          "id": "select_icon",
-          "label": "Use icon",
-          "options": [
-            {
-              "value": "return icon",
-              "label": "Return Icon"
-            },
-            {
-              "value": "free delivery",
-              "label": "Free Delivery"
-            },
-            {
-              "value": "location",
-              "label": "Location"
-            }
-          ]
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
         },
         {
           "type": "text",
