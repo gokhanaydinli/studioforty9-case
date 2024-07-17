@@ -85,7 +85,8 @@
             "image": "shopify:\/\/shop_images\/image1-min.jpg",
             "title": "Hiking Essentials",
             "description": "Nullan quis risus eget urna mollis ornare vel eu leo.",
-            "button": "shop hiking"
+            "button": "shop hiking",
+            "bg_color": "#0468db"
           }
         },
         "box_XAHpY6": {
@@ -95,7 +96,8 @@
             "image": "shopify:\/\/shop_images\/image2-min.jpg",
             "title": "Accessories",
             "description": "Curabitur blandit tempus porttitor. Maecenas faucibus mollis.",
-            "button": "shop accessories"
+            "button": "shop accessories",
+            "bg_color": "#001d7c"
           }
         },
         "box_LjzjmK": {
@@ -105,7 +107,8 @@
             "image": "shopify:\/\/shop_images\/image3-min.jpg",
             "title": "outdoor essentials",
             "description": "Curabitur blandit tempus porttitor. Maecenas faucibus mollis.",
-            "button": "shop outdoor essentials"
+            "button": "shop outdoor essentials",
+            "bg_color": "#001d7c"
           }
         }
       },
