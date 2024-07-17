@@ -81,22 +81,31 @@
         "box_xzEUQC": {
           "type": "box",
           "settings": {
+            "order_number": "1",
             "image": "shopify:\/\/shop_images\/image1-min.jpg",
-            "order_number": "1"
+            "title": "Hiking Essentials",
+            "description": "Nullan quis risus eget urna mollis ornare vel eu leo.",
+            "button": "shop hiking"
           }
         },
         "box_XAHpY6": {
           "type": "box",
           "settings": {
+            "order_number": "2",
             "image": "shopify:\/\/shop_images\/image2-min.jpg",
-            "order_number": "2"
+            "title": "Accessories",
+            "description": "Curabitur blandit tempus porttitor. Maecenas faucibus mollis.",
+            "button": "shop accessories"
           }
         },
         "box_LjzjmK": {
           "type": "box",
           "settings": {
+            "order_number": "3",
             "image": "shopify:\/\/shop_images\/image3-min.jpg",
-            "order_number": "3"
+            "title": "outdoor essentials",
+            "description": "Curabitur blandit tempus porttitor. Maecenas faucibus mollis.",
+            "button": "shop outdoor essentials"
           }
         }
       },
