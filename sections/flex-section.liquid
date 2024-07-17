@@ -4,18 +4,6 @@
         padding: 24px 0;
     }
 
-    .D-Flex {
-        display: flex;
-    }
-
-    .F-Row {
-        flex-direction: row;
-    }
-
-    .F-Column {
-        flex-direction: column;
-    }
-
     .left-column, .right-column {
         padding: 12px;
     }
@@ -40,6 +28,7 @@
     .Order-2 .left-content, .Order-2 .right-content {
         flex: 1;
         width: 50%;
+        position: relative;
     }
 
     .right-content {
@@ -54,10 +43,15 @@
 
     .flex-section-bg-image {
         height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .flex-section-bg-image-container {
         position: relative;
     }
 
-    .flex-section-bg-image::after {
+    .flex-section-bg-image-container::after {
         content: '';
         position: absolute;
         top: 0;
@@ -90,7 +84,7 @@
                 {% for block in section.blocks %}
                     {% if block.settings.order_number == '1' or block.settings.order_number == '2' %}
                         <div class="Order-{{ block.settings.order_number }} D-Flex F-Row" style="height: 100%;">
-                            <div class="left-content">
+                            <div class="left-content flex-section-bg-image-container">
                                 <img src="{{ block.settings.image | img_url: '1024x1024' }}" class="flex-section-bg-image" alt="Background Image" />
                             </div>
                             <div class="right-content D-Flex F-Column">
@@ -106,7 +100,7 @@
                 {% for block in section.blocks %}
                     {% if block.settings.order_number == '3' %}
                         <div class="Order-{{ block.settings.order_number }} D-Flex F-Row" style="height: 100%;">
-                            <div class="left-content P-Relative">
+                            <div class="left-content flex-section-bg-image-container P-Relative">
                                 <img src="{{ block.settings.image | img_url: '1024x1024' }}" class="flex-section-bg-image" alt="Background Image" />
                                 <div class="P-Absolute right-column-content">
                                     <h1 class="ColorWhite">{{ block.settings.title }}</h1>
