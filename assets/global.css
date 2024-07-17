@@ -26,6 +26,14 @@
     justify-content: center;
 }
 
+.Gap8 {
+    gap:8px;
+}
+
+.MarginNone {
+    margin: 0;
+}
+
 .ColorWhite {
     color:white;
 }
