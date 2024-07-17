@@ -8,6 +8,14 @@
         display: flex;
     }
 
+    .F-Row {
+        flex-direction: row;
+    }
+
+    .F-Column {
+        flex-direction: column;
+    }
+
     .left-column, .right-column {
         padding: 12px;
     }
@@ -22,9 +30,21 @@
         flex: 1;
     }
 
-    .Order-1, .Order-2, .Order-3 {
+    .Order-1, .Order-2 {
         margin: 12px 0;
         border: 1px solid #000;
+    }
+
+    .Order-1 .left-content, .Order-1 .right-content,
+    .Order-2 .left-content, .Order-2 .right-content {
+        flex: 1;
+        width: 50%;
+    }
+
+    .Order-3 {
+        margin: 12px 0;
+        border: 1px solid #000;
+        width: 100%;
     }
 </style>
 
@@ -33,20 +53,15 @@
         <div class="D-Flex">
             <div class="left-column">
                 {% for block in section.blocks %}
-
-                    {% liquid
-                        assign image = block.settings.image
-                    %}
-
                     {% if block.settings.order_number == '1' or block.settings.order_number == '2' %}
                         <div class="Order-{{ block.settings.order_number }} D-Flex F-Row">
-                            <div>
-                                <img src="{{ image | img_url: '1024x1024' }}" alt="Background Image" />
+                            <div class="left-content">
+                                <img src="{{ block.settings.image | img_url: '1024x1024' }}" alt="Background Image" />
                             </div>
-                            <div class="D-Flex F-Column">
-                                <h1>title</h1>
-                                <h2>description</h2>
-                                <h3>button</h3>
+                            <div class="right-content D-Flex F-Column">
+                                <h1>{{ block.settings.title }}</h1>
+                                <h2>{{ block.settings.description }}</h2>
+                                <h3>{{ block.settings.button }}</h3>
                             </div>
                         </div>
                     {% endif %}
@@ -55,8 +70,10 @@
             <div class="right-column">
                 {% for block in section.blocks %}
                     {% if block.settings.order_number == '3' %}
-                        <div class="Order-{{ block.settings.order_number }}">
-                            <img src="{{ image | img_url: '1024x1024' }}" alt="Background Image" />
+                        <div class="Order-{{ block.settings.order_number }} D-Flex F-Row">
+                            <div class="left-content">
+                                <img src="{{ block.settings.image | img_url: '1024x1024' }}" alt="Background Image" />
+                            </div>
                         </div>
                     {% endif %}
                 {% endfor %}
@@ -76,11 +93,6 @@
       "name": "Box",
       "settings": [
         {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
           "id": "order_number",
           "type": "select",
           "label": "Order Number",
@@ -98,6 +110,26 @@
               "label": "3"
             }
           ]
+        },
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Image"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "id": "description",
+          "type": "text",
+          "label": "Description"
+        },
+        {
+          "id": "button",
+          "type": "text",
+          "label": "Button"
         }
       ]
     }
