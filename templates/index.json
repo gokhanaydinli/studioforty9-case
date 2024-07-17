@@ -74,10 +74,16 @@
       ],
       "settings": {
       }
+    },
+    "flex_section_pH3MeC": {
+      "type": "flex-section",
+      "settings": {
+      }
     }
   },
   "order": [
     "hero_carousel_gJpAeh",
-    "free_delivery_banner_y7xXVV"
+    "free_delivery_banner_y7xXVV",
+    "flex_section_pH3MeC"
   ]
 }
