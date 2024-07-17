@@ -58,7 +58,6 @@
     font-weight: 700;
 }
 
-
 .Heading1 {
     font-size:72px;
 }
@@ -85,4 +84,16 @@
 
 .z-index-9 {
     z-index: 9;
+}
+
+.Font-16 {
+    font-size: 16px;
+}
+
+.Font-36 {
+    font-size: 36px;
+}
+
+.Font-66 {
+    font-size: 66px;
 }

@@ -5,7 +5,7 @@
     }
 
     .left-column, .right-column {
-        padding: 12px;
+        padding: 8px;
     }
 
     .left-column {
@@ -21,7 +21,7 @@
     }
 
     .Order-1, .Order-2 {
-        margin: 12px 0;
+        margin: 8px 0;
     }
 
     .Order-1 .left-content, .Order-1 .right-content,
@@ -75,9 +75,11 @@
         text-align: left;
     }
 
-    .right-column .right-content .Button {
+    .right-column .Button, .left-column .Button {
         width: max-content;
         border:1px solid #ffffff;
+        padding: 16px 32px;
+        text-transform: uppercase;
     }
 </style>
 
@@ -87,14 +89,14 @@
             <div class="left-column">
                 {% for block in section.blocks %}
                     {% if block.settings.order_number == '1' or block.settings.order_number == '2' %}
-                        <div class="Order-{{ block.settings.order_number }} D-Flex F-Row" style="height: 100%;">
+                        <div class="Order-{{ block.settings.order_number }} D-Flex F-Row" style="height: 100%;min-height: 340px">
                             <div class="left-content flex-section-bg-image-container">
                                 <img src="{{ block.settings.image | img_url: '1024x1024' }}" class="flex-section-bg-image" alt="Background Image" />
                             </div>
                             <div class="right-content D-Flex F-Column" style="background-color: {{ block.settings.bg_color }};">
-                                <h1 class="ColorWhite">{{ block.settings.title }}</h1>
-                                <p class="ColorWhite">{{ block.settings.description }}</p>
-                                <a href="#" class="ColorWhite">{{ block.settings.button }}</a>
+                                <h1 class="ColorWhite Font-36">{{ block.settings.title }}</h1>
+                                <p class="ColorWhite Font-16">{{ block.settings.description }}</p>
+                                <a href="#" class="ColorWhite Button">{{ block.settings.button }}</a>
                             </div>
                         </div>
                     {% endif %}
@@ -107,8 +109,8 @@
                             <div class="left-content flex-section-bg-image-container P-Relative">
                                 <img src="{{ block.settings.image | img_url: '1024x1024' }}" class="flex-section-bg-image" alt="Background Image" />
                                 <div class="P-Absolute right-column-content">
-                                    <h1 class="ColorWhite">{{ block.settings.title }}</h1>
-                                    <p class="ColorWhite">{{ block.settings.description }}</p>
+                                    <h1 class="ColorWhite Font-66">{{ block.settings.title }}</h1>
+                                    <p class="ColorWhite Font-16">{{ block.settings.description }}</p>
                                     <a href="#" class="ColorWhite Button">{{ block.settings.button }}</a>
                                 </div>
                             </div>
