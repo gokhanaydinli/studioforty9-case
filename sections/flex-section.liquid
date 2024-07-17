@@ -28,11 +28,12 @@
 
     .right-column {
         flex: 1;
+        display: flex;
+        flex-direction: column;
     }
 
     .Order-1, .Order-2 {
         margin: 12px 0;
-        border: 1px solid #000;
     }
 
     .Order-1 .left-content, .Order-1 .right-content,
@@ -41,27 +42,35 @@
         width: 50%;
     }
 
+    .right-content {
+        background-color: #001d7c;
+        color: #fff;
+    }
+
     .Order-3 {
         margin: 12px 0;
-        border: 1px solid #000;
         width: 100%;
+    }
+
+    .flex-section-bg-image {
+        height: 100%;
     }
 </style>
 
 <div class="section-id-{{ section.id }}">
     <div class="flex-section-container">
-        <div class="D-Flex">
+        <div class="D-Flex F-Row" style="height: 100%;">
             <div class="left-column">
                 {% for block in section.blocks %}
                     {% if block.settings.order_number == '1' or block.settings.order_number == '2' %}
-                        <div class="Order-{{ block.settings.order_number }} D-Flex F-Row">
+                        <div class="Order-{{ block.settings.order_number }} D-Flex F-Row" style="height: 100%;">
                             <div class="left-content">
-                                <img src="{{ block.settings.image | img_url: '1024x1024' }}" alt="Background Image" />
+                                <img src="{{ block.settings.image | img_url: '1024x1024' }}" class="flex-section-bg-image" alt="Background Image" />
                             </div>
                             <div class="right-content D-Flex F-Column">
-                                <h1>{{ block.settings.title }}</h1>
-                                <h2>{{ block.settings.description }}</h2>
-                                <h3>{{ block.settings.button }}</h3>
+                                <h1 class="ColorWhite">{{ block.settings.title }}</h1>
+                                <p class="ColorWhite">{{ block.settings.description }}</p>
+                                <a href="#" class="ColorWhite">{{ block.settings.button }}</a>
                             </div>
                         </div>
                     {% endif %}
@@ -70,9 +79,9 @@
             <div class="right-column">
                 {% for block in section.blocks %}
                     {% if block.settings.order_number == '3' %}
-                        <div class="Order-{{ block.settings.order_number }} D-Flex F-Row">
+                        <div class="Order-{{ block.settings.order_number }} D-Flex F-Row" style="height: 100%;">
                             <div class="left-content">
-                                <img src="{{ block.settings.image | img_url: '1024x1024' }}" alt="Background Image" />
+                                <img src="{{ block.settings.image | img_url: '1024x1024' }}" class="flex-section-bg-image" alt="Background Image" />
                             </div>
                         </div>
                     {% endif %}
