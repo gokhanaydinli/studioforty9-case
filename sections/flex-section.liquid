@@ -97,9 +97,11 @@
                                 <img src="{{ block.settings.image | img_url: '1024x1024' }}" class="flex-section-bg-image" alt="Background Image" />
                             </div>
                             <div class="right-content D-Flex F-Column" style="background-color: {{ block.settings.bg_color }};">
-                                <h1 class="ColorWhite Font-36">{{ block.settings.title }}</h1>
-                                <p class="ColorWhite Font-16">{{ block.settings.description }}</p>
-                                <a href="#" class="ColorWhite Button">{{ block.settings.button }}</a>
+                                <div class="D-Flex F-Column" style="max-width: 320px">
+                                    <h1 class="ColorWhite Font-36">{{ block.settings.title }}</h1>
+                                    <p class="ColorWhite Font-16">{{ block.settings.description }}</p>
+                                    <a href="#" class="ColorWhite Button">{{ block.settings.button }}</a>
+                                </div>
                             </div>
                         </div>
                     {% endif %}
