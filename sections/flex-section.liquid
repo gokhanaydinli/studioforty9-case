@@ -82,6 +82,11 @@
                         <div class="Order-{{ block.settings.order_number }} D-Flex F-Row" style="height: 100%;">
                             <div class="left-content">
                                 <img src="{{ block.settings.image | img_url: '1024x1024' }}" class="flex-section-bg-image" alt="Background Image" />
+                                <div>
+                                    <h1 class="ColorWhite">{{ block.settings.title }}</h1>
+                                    <p class="ColorWhite">{{ block.settings.description }}</p>
+                                    <a href="#" class="ColorWhite">{{ block.settings.button }}</a>
+                                </div>
                             </div>
                         </div>
                     {% endif %}
