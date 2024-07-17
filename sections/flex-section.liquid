@@ -54,6 +54,32 @@
 
     .flex-section-bg-image {
         height: 100%;
+        position: relative;
+    }
+
+    .flex-section-bg-image::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* %60 opacity */
+        pointer-events: none; /* Ensures the overlay does not interfere with other elements */
+    }
+
+    .right-column-content {
+        z-index: 9;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
     }
 </style>
 
@@ -80,9 +106,9 @@
                 {% for block in section.blocks %}
                     {% if block.settings.order_number == '3' %}
                         <div class="Order-{{ block.settings.order_number }} D-Flex F-Row" style="height: 100%;">
-                            <div class="left-content">
+                            <div class="left-content P-Relative">
                                 <img src="{{ block.settings.image | img_url: '1024x1024' }}" class="flex-section-bg-image" alt="Background Image" />
-                                <div>
+                                <div class="P-Absolute right-column-content">
                                     <h1 class="ColorWhite">{{ block.settings.title }}</h1>
                                     <p class="ColorWhite">{{ block.settings.description }}</p>
                                     <a href="#" class="ColorWhite">{{ block.settings.button }}</a>
