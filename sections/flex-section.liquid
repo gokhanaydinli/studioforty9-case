@@ -1,4 +1,4 @@
-{% style %}
+<style>
     .flex-section-container {
         margin: 24px;
         padding: 24px 0;
@@ -74,7 +74,12 @@
         align-items: center;
         text-align: left;
     }
-{% endstyle %}
+
+    .right-column .right-content .Button {
+        width: max-content;
+        border:1px solid #ffffff;
+    }
+</style>
 
 <div class="section-id-{{ section.id }}">
     <div class="flex-section-container">
@@ -89,7 +94,7 @@
                             <div class="right-content D-Flex F-Column" style="background-color: {{ block.settings.bg_color }};">
                                 <h1 class="ColorWhite">{{ block.settings.title }}</h1>
                                 <p class="ColorWhite">{{ block.settings.description }}</p>
-                                <a href="#" class="ColorWhite">{{ block.settings.button }}</a>
+                                <a href="#" class="ColorWhite Button">{{ block.settings.button }}</a>
                             </div>
                         </div>
                     {% endif %}
@@ -101,7 +106,7 @@
                         <div class="Order-{{ block.settings.order_number }} D-Flex F-Row" style="height: 100%;">
                             <div class="left-content flex-section-bg-image-container P-Relative">
                                 <img src="{{ block.settings.image | img_url: '1024x1024' }}" class="flex-section-bg-image" alt="Background Image" />
-                                <div class="P-Absolute right-column-content" style="background-color: {{ block.settings.bg_color }};">
+                                <div class="P-Absolute right-column-content">
                                     <h1 class="ColorWhite">{{ block.settings.title }}</h1>
                                     <p class="ColorWhite">{{ block.settings.description }}</p>
                                     <a href="#" class="ColorWhite">{{ block.settings.button }}</a>
